@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Enter Student Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        input[type="number"]:focus {
+            border-color: #74b9ff;
+            outline: none;
+            box-shadow: 0px 0px 8px rgba(116,185,255,0.6);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: #0984e3;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #74b9ff;
+        }
+    </style>
+</head>
+<body>
+<h2>Enter Student Details</h2>
+<form action="/set" method="get">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Roll No:</label>
+    <input type="text" name="rollno" required>
+
+    <label>DOB:</label>
+    <input type="date" name="dataofbirth" required>
+
+    <label>First Language:</label>
+    <input type="number" name="firstlanguage" required>
+
+    <label>Third Language:</label>
+    <input type="number" name="thirdlanguage" required>
+
+    <label>Mathematics:</label>
+    <input type="number" name="mathematics" required>
+
+    <label>Science:</label>
+    <input type="number" name="science" required>
+
+    <label>Second Language:</label>
+    <input type="number" name="secondlanguage" required>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
